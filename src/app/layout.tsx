@@ -1,7 +1,14 @@
 import type { Metadata } from 'next'
+import { Quicksand } from 'next/font/google'
 import '../styles/globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+
+const quicksand = Quicksand({ 
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-quicksand'
+})
 
 export const metadata: Metadata = {
   title: 'De Taalreis - Bij de Taalreis gaan we samen op een taalrijke ontdekkingsreis!',
@@ -16,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl" className="scroll-smooth">
-      <body style={{ fontFamily: '"Calibri Light", Calibri, "Helvetica Neue", Arial, sans-serif' }}>
+      <body style={{ fontFamily: '"Calibri Light", Calibri, "Helvetica Neue", Arial, sans-serif' }} className={quicksand.variable}>
         <Navigation />
         {children}
         <Footer />
