@@ -1,14 +1,4 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import '../styles/globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'De Taalreis - Nederlands Bijles & Tutoring',
-  description: 'Professionele Nederlandse bijlessen voor studenten die moeite hebben met de taal. Persoonlijke begeleiding bij jou thuis.',
-  keywords: 'nederlands bijles, dutch tutoring, nederlandse taal, bijlessen, taalles',
-}
 
 export default function RootLayout({
   children,
@@ -16,9 +6,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="nl">
-      <body className={inter.className}>{children}</body>
+    <html lang="nl" className="scroll-smooth">
+      <head>
+        <title>De Taalreis - Bij de Taalreis gaan we samen op een taalrijke ontdekkingsreis!</title>
+        <meta name="description" content="Bij de Taalreis gaan we samen op een taalrijke ontdekkingsreis! Nederlandse bijlessen voor studenten." />
+      </head>
+      <body style={{ fontFamily: '"Calibri Light", Calibri, "Helvetica Neue", Arial, sans-serif' }}>
+        {children}
+      </body>
     </html>
   )
 }
-

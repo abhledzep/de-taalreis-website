@@ -1,79 +1,46 @@
 export default function About() {
   return (
-    <section id="about" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="lg:text-center">
-          <h2 className="text-base text-blue-600 font-semibold tracking-wide uppercase">Over Mij</h2>
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Passie voor Taal & Onderwijs
-          </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Als ervaren docent Nederlands help ik studenten die moeite hebben met de taal. 
-            Met persoonlijke aandacht en een praktische aanpak maak ik leren effectief en leuk.
-          </p>
+    <section id="over-de-taalreis" className="py-20 px-4 sm:px-6 lg:px-8 bg-white relative">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-bold text-teal-800 mb-4">Over de Taalreis</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-teal-500 to-orange-500 mx-auto rounded-full"></div>
         </div>
+        
+        <div className="space-y-12">
+          {/* Inhoud */}
+          <div className="bg-gradient-to-br from-teal-50 to-orange-50 p-8 md:p-12 rounded-3xl shadow-lg">
+            <h3 className="text-2xl md:text-3xl font-bold text-teal-800 mb-6">Inhoud</h3>
+            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+              De Taalreis biedt ondersteuning op het gebied van taal- en leesontwikkeling. Er is specifieke aandacht voor het verbreden van de woordenschat en het verhogen van de spreek-, lees- en luistervaardigheid. Door middel van prenten- en leesboeken, taalspellen, voorwerpen en muziek komt de taalontwikkeling tot leven!
+            </p>
+          </div>
 
-        <div className="mt-10">
-          <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-            <div className="relative">
-              <dt>
-                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                  </svg>
-                </div>
-                <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Persoonlijke Aanpak</p>
-              </dt>
-              <dd className="mt-2 ml-16 text-base text-gray-500">
-                Elke student is uniek. Ik pas mijn lessen aan op jouw niveau en leerstijl.
-              </dd>
-            </div>
+          {/* Voor wie */}
+          <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-8 md:p-12 rounded-3xl shadow-lg">
+            <h3 className="text-2xl md:text-3xl font-bold text-teal-800 mb-6">Voor wie</h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              De lessen van de Taalreis zijn bedoeld voor kinderen die ondersteuning nodig hebben in de Nederlandse taal. Dit kan bijvoorbeeld voor kinderen die het Nederlands niet als moedertaal hebben. Ook kan ik hulp bieden bij het leren lezen en het stimuleren van het leesplezier.
+            </p>
+          </div>
 
-            <div className="relative">
-              <dt>
-                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                  </svg>
-                </div>
-                <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Bij Jou Thuis</p>
-              </dt>
-              <dd className="mt-2 ml-16 text-base text-gray-500">
-                Lessen vinden plaats in een vertrouwde, rustige omgeving waar je je kunt focussen.
-              </dd>
-            </div>
+          {/* Aanbod */}
+          <div className="bg-gradient-to-br from-yellow-50 to-teal-50 p-8 md:p-12 rounded-3xl shadow-lg">
+            <h3 className="text-2xl md:text-3xl font-bold text-teal-800 mb-6">Aanbod</h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              De Taalreis is creatief, taalverrijkend en persoonlijk. Hoe de taalreis verloopt, is afhankelijk van de hulpvraag en wat bij het kind past. Eerst maken we kennis, zodat het kind zich op zijn gemak voelt en ik kan bekijken wat het nodig heeft. Hierna neem ik contact op om een verder plan te bespreken.
+            </p>
+          </div>
 
-            <div className="relative">
-              <dt>
-                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Resultaatgericht</p>
-              </dt>
-              <dd className="mt-2 ml-16 text-base text-gray-500">
-                Focus op concrete verbeteringen: betere cijfers, meer zelfvertrouwen, beter taalbegrip.
-              </dd>
-            </div>
-
-            <div className="relative">
-              <dt>
-                <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <p className="ml-16 text-lg leading-6 font-medium text-gray-900">Flexibele Planning</p>
-              </dt>
-              <dd className="mt-2 ml-16 text-base text-gray-500">
-                Samen vinden we tijden die passen bij jouw schema en schoolwerk.
-              </dd>
-            </div>
-          </dl>
+          {/* Locatie en tijden */}
+          <div className="bg-gradient-to-br from-teal-50 to-orange-50 p-8 md:p-12 rounded-3xl shadow-lg">
+            <h3 className="text-2xl md:text-3xl font-bold text-teal-800 mb-6">Locatie en tijden</h3>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              De ondersteuning vindt buiten schooltijd plaats bij de ruimte van 'De Taalreis' in Amsterdam Zuid (prinses Irenebuurt). Dit kan wekelijks. Helaas is het niet mogelijk om bij een andere locatie te komen.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   )
 }
-
