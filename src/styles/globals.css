@@ -3,19 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    font-family: 'Calibri Light', Calibri, 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 300;
-  }
-  
-  strong, b, .font-bold {
-    font-family: Calibri, 'Helvetica Neue', Arial, sans-serif;
-    font-weight: 600;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: Calibri, 'Helvetica Neue', Arial, sans-serif;
-  }
+  /* Quicksand is now used globally via Next.js font */
 }
 
 :root {

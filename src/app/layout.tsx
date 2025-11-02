@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl" className="scroll-smooth">
-      <body style={{ fontFamily: '"Calibri Light", Calibri, "Helvetica Neue", Arial, sans-serif' }} className={quicksand.variable}>
+      <body className={quicksand.className}>
         <Navigation />
         {children}
         <Footer />
