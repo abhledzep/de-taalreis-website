@@ -7,7 +7,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-purple-200 shadow-md sticky top-0 z-50 border-b-2 border-purple-300" style={{ fontFamily: 'var(--font-quicksand)' }}>
+    <nav className="bg-purple-200 shadow-md sticky top-0 z-50 border-b-2 border-purple-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
